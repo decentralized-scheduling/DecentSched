@@ -4,6 +4,8 @@ This repository contains the implementation of DecentSched as a ready-to-use use
 The detailed design is introduced in our paper, "Fast Abort-Freedom for Deterministic Transactions"
 on IPDPS '24.
 
+[[Paper PDF](https://www.roychan.org/assets/publications/ipdps24chen.pdf)]
+
 DecentSched is a concurrency control protocol for deterministic transactions (i.e., transactions
 with known read/write key set before execution). It utilizes queue-based ordering and decentralized
 scheduling to let transactions execute efficiently. It provides serializable isolation between
