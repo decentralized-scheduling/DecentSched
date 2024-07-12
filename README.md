@@ -4,6 +4,7 @@ This repository contains the implementation of DecentSched as a ready-to-use use
 The detailed design is introduced in our paper, "Fast Abort-Freedom for Deterministic Transactions"
 on IPDPS '24.
 
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10579229)]
 [[Paper PDF](https://www.roychan.org/assets/publications/ipdps24chen.pdf)]
 [[Slides](https://www.roychan.org/assets/publications/ipdps24chen-slides.pdf)]
 
@@ -51,3 +52,18 @@ of core functions in the library.
 | `qcc_txn_finish` | Marking the current transaction as finished after execution (commit). |
 | `qcc_sync` | Synchronizing all worker threads on a global barrier. Used interally for epoch-based memory management. |
 | `qcc_snapshot_*` | Taking a version number snapshot of all accessed items (for opportunistic execution). |
+
+## Citation (BibTeX)
+```
+@inproceedings{chen2024decentsched,
+    author={Chen, Chen and Wu, Xingbo and Zhong, Wenshao and Eriksson, Jakob},
+    booktitle={2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+    title={Fast Abort-Freedom for Deterministic Transactions},
+    year={2024},
+    volume={},
+    number={},
+    pages={692-704},
+    keywords={Distributed processing;Protocols;Scheduling algorithms;Force;Process control;Tail;Benchmark testing;Transaction processing;Transaction scheduling;Concurrency control},
+    doi={10.1109/IPDPS57955.2024.00067}
+}
+```
